@@ -203,7 +203,6 @@ main .skills-card {
   gap: 1rem;
   aspect-ratio: 1 / 1;
   box-sizing: border-box;
-  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 main .skills-card:hover {
@@ -307,4 +306,126 @@ main .project-card .btn-project {
 
 main .project-card .btn-project:hover {
   background-color: var(--color-primary-hover);
+}
+
+/*ESTILOS DE CONTACTOS*/
+
+main .contact {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+main .contact h2 {
+  font-size: 3rem;
+  color: var(--color-text);
+  letter-spacing: 0.05em;
+  margin: 0;
+  text-align: center;
+}
+
+main .contact form {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 0.75rem;
+  padding: 2.5rem 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  width: 100%;
+  max-width: 36rem;
+  box-sizing: border-box;
+}
+
+main .contact form label {
+  color: var(--color-text);
+  font-size: 1.25rem;
+  letter-spacing: 0.05em;
+  margin-bottom: -0.5rem;
+}
+
+main .contact form input,
+main .contact form textarea {
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 0.5rem;
+  padding: 0.85rem 1rem;
+  color: var(--color-text);
+  font-size: 1rem;
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+main .contact form input:focus,
+main .contact form textarea:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 10px rgba(59, 130, 246, 0.3);
+}
+
+main .contact form textarea {
+  min-height: 8rem;
+  resize: vertical;
+}
+
+main .contact form button[type="submit"] {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.85rem 1.5rem;
+  font-size: 1.25rem;
+  font-family: var(--font-family);
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  margin-top: 0.75rem;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+main .contact form button[type="submit"]:hover {
+  background-color: var(--color-primary-hover);
+  box-shadow: 0 4px 16px rgba(59, 130, 246, 0.35);
+}
+
+/* ESTILOS DEL FOOTER */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5rem 4rem;
+  border-top: 1px solid var(--color-border);
+  color: var(--color-text-muted);
+  font-size: 1.15rem;
+  letter-spacing: 0.05em;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: var(--color-text);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  padding: 0.5rem 1.25rem;
+  border-radius: 9999px;
+  font-size: 1.1rem;
+  letter-spacing: 0.05em;
+}
+
+footer a:hover {
+  border-color: var(--color-primary);
+  color: var(--color-accent);
+  background-color: var(--color-surface-hover);
+  box-shadow: 0 4px 16px rgba(59, 130, 246, 0.25);
 }
