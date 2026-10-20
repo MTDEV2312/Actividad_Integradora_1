@@ -165,3 +165,61 @@ main .about-me p {
   font-size: 1.25rem;
   margin: 0;
 }
+
+/* ESTILOS DE SKILLS*/
+
+main .skills {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+main .skills h2 {
+  font-size: 3rem;
+  color: var(--color-text);
+  letter-spacing: 0.05em;
+  margin: 0;
+  text-align: center;
+}
+
+main .skills .skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  gap: 2rem;
+  width: 100%;
+  max-width: 60rem;
+}
+
+main .skills-card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 0.75rem;
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  aspect-ratio: 1 / 1;
+  box-sizing: border-box;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+main .skills-card:hover {
+  border-color: var(--color-primary);
+  box-shadow: 0 8px 24px rgba(59, 130, 246, 0.2);
+}
+
+main .skills-card img {
+  width: 4rem;
+  height: 4rem;
+  object-fit: contain;
+}
+
+main .skills-card p {
+  font-size: 1.25rem;
+  margin: 0;
+  color: var(--color-text);
+  letter-spacing: 0.05em;
+}
