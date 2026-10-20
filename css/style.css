@@ -429,3 +429,65 @@ footer a:hover {
   background-color: var(--color-surface-hover);
   box-shadow: 0 4px 16px rgba(59, 130, 246, 0.25);
 }
+
+/* RESPONSIVE PARA MÓVILES Y PANTALLAS PEQUEÑAS */
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 1.5rem 1rem;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  header nav {
+    margin-right: 0;
+  }
+
+  header nav ul {
+    gap: 1.5rem;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  header section {
+    margin-left: 0;
+  }
+
+  main section {
+    padding: 2rem 1.5rem;
+  }
+
+  main .hero {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+    min-height: auto;
+  }
+
+  main .hero .profile-picture {
+    width: 12rem;
+    height: 12rem;
+  }
+
+  main .hero .presentation h1 {
+    font-size: 3.5rem;
+  }
+
+  main .skills .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  main .projects .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    padding: 2rem 1.5rem;
+  }
+}
+
