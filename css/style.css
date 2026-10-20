@@ -1,0 +1,29 @@
+
+:root {
+  /* Fondos */
+  --color-bg: #0B1120;
+  --color-surface: #151F32;
+  --color-surface-hover: #1E293B;
+
+  /* Colores principales */
+  --color-primary: #3B82F6;
+  --color-primary-hover: #2563EB;
+  --color-secondary: #8B5CF6;
+  --color-accent: #22D3EE;
+
+  /* Textos */
+  --color-text: #F8FAFC;
+  --color-text-secondary: #94A3B8;
+  --color-text-muted: #64748B;
+
+  /* Bordes */
+  --color-border: #334155;
+
+  /* Estados */
+  --color-success: #22C55E;
+  --color-error: #EF4444;
+
+  /* Colores neutros */
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+}
